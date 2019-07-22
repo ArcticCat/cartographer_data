@@ -1,0 +1,41 @@
+W0722 16:23:30.499387 10917 rosbag_validate_main.cc:353] frame_id "odom" on topic /odom has serialization time 1563797318.420293946 but sensor time 1563797318.727748970 differing by 0.307455 s.
+E0722 16:23:30.499575 10917 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:23:30.499655 10917 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:23:30.499671 10917 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:23:30.499686 10917 rosbag_validate_main.cc:316] Sensor with frame_id "odom" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:23:30.499704 10917 rosbag_validate_main.cc:316] Sensor with frame_id "odom" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:23:30.499795 10917 rosbag_validate_main.cc:316] Sensor with frame_id "odom" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:23:30.499956 10917 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993941189344954, current one at time 636993941189344954
+E0722 16:23:30.500108 10917 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993941190145694, current one at time 636993941190145694
+E0722 16:23:30.500211 10917 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993941190883022, current one at time 636993941190883022
+E0722 16:23:30.507575 10917 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563797324.984791597 but sensor time 1563797325.491508089 differing by 0.506716 s.
+E0722 16:23:30.511416 10917 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563797328.381382228 but sensor time 1563797328.898753952 differing by 0.517372 s.
+E0722 16:23:30.512028 10917 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563797328.825556642 but sensor time 1563797329.335753952 differing by 0.510197 s.
+W0722 16:23:30.673638 10917 rosbag_validate_main.cc:203] Sensor with frame_id "base_scan" range measurements have longest overlap of 0.14634 s
+E0722 16:23:30.673682 10917 rosbag_validate_main.cc:383] Point data (frame_id: "base_scan") has a large gap, largest is 0.157567 s, recommended is [0.0005, 0.05] s with no jitter.
+I0722 16:23:30.673807 10917 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "/scan" (frame_id: "base_scan"):
+Count: 3994  Min: 0  Max: 0.157567  Mean: 0.038731
+[0.000000, 0.015757)	          ##########	Count: 1997 (50%)	Total: 1997 (50%)
+[0.015757, 0.031513)	                    	Count: 0 (0%)	Total: 1997 (50%)
+[0.031513, 0.047270)	                    	Count: 0 (0%)	Total: 1997 (50%)
+[0.047270, 0.063027)	                    	Count: 0 (0%)	Total: 1997 (50%)
+[0.063027, 0.078783)	               #####	Count: 906 (22.684%)	Total: 2903 (72.684%)
+[0.078783, 0.094540)	               #####	Count: 1090 (27.2909%)	Total: 3993 (99.975%)
+[0.094540, 0.110297)	                    	Count: 0 (0%)	Total: 3993 (99.975%)
+[0.110297, 0.126053)	                    	Count: 0 (0%)	Total: 3993 (99.975%)
+[0.126053, 0.141810)	                    	Count: 0 (0%)	Total: 3993 (99.975%)
+[0.141810, 0.157567]	                    	Count: 1 (0.0250376%)	Total: 3994 (100%)
+I0722 16:23:30.674168 10917 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "/odom" (frame_id: "odom"):
+Count: 13380  Min: -0.118333  Max: 0.131469  Mean: 0.011574
+[-0.118333, -0.093353)	                    	Count: 5 (0.0373692%)	Total: 5 (0.0373692%)
+[-0.093353, -0.068373)	                    	Count: 71 (0.530643%)	Total: 76 (0.568012%)
+[-0.068373, -0.043392)	                   #	Count: 355 (2.65321%)	Total: 431 (3.22123%)
+[-0.043392, -0.018412)	                  ##	Count: 1155 (8.63229%)	Total: 1586 (11.8535%)
+[-0.018412, 0.006568)	              ######	Count: 4058 (30.3288%)	Total: 5644 (42.1824%)
+[0.006568, 0.031548)	             #######	Count: 4952 (37.0105%)	Total: 10596 (79.1928%)
+[0.031548, 0.056528)	                 ###	Count: 2091 (15.6278%)	Total: 12687 (94.8206%)
+[0.056528, 0.081509)	                   #	Count: 593 (4.43199%)	Total: 13280 (99.2526%)
+[0.081509, 0.106489)	                    	Count: 95 (0.710015%)	Total: 13375 (99.9626%)
+[0.106489, 0.131469]	                    	Count: 5 (0.0373692%)	Total: 13380 (100%)
+[cartographer_rosbag_validate_node-1] process has finished cleanly
+

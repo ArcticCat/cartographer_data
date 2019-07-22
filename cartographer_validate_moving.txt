@@ -1,0 +1,40 @@
+W0722 16:26:17.167909 10974 rosbag_validate_main.cc:353] frame_id "odom" on topic /odom has serialization time 1563798234.329584694 but sensor time 1563798234.631000902 differing by 0.301416 s.
+E0722 16:26:17.168154 10974 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:26:17.168241 10974 rosbag_validate_main.cc:316] Sensor with frame_id "odom" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:26:17.168385 10974 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:26:17.168399 10974 rosbag_validate_main.cc:316] Sensor with frame_id "odom" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:26:17.168427 10974 rosbag_validate_main.cc:327] frame_id "odom" is send on multiple topics. It was seen at least on /odom and /odom_server
+E0722 16:26:17.168610 10974 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993950348945940, current one at time 636993950348945940
+E0722 16:26:17.168624 10974 rosbag_validate_main.cc:316] Sensor with frame_id "base_scan" jumps backwards in time, i.e. timestamps are not strictly increasing. Make sure that the bag contains the data for each frame_id sorted by header.stamp, i.e. the order in which they were acquired from the sensor.
+E0722 16:26:17.168761 10974 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993950349743676, current one at time 636993950349743676
+E0722 16:26:17.168880 10974 rosbag_validate_main.cc:160] Sensor with frame_id "base_scan" is not sequential in time.Previous range message ends at time 636993950350537670, current one at time 636993950350537670
+E0722 16:26:17.169644 10974 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563798235.259651935 but sensor time 1563798235.773684928 differing by 0.514033 s.
+E0722 16:26:17.169687 10974 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563798235.282567739 but sensor time 1563798235.789684928 differing by 0.507117 s.
+E0722 16:26:17.169831 10974 rosbag_validate_main.cc:351] frame_id "odom" on topic /odom has serialization time 1563798235.303571878 but sensor time 1563798235.805684928 differing by 0.502113 s.
+W0722 16:26:17.350642 10974 rosbag_validate_main.cc:203] Sensor with frame_id "base_scan" range measurements have longest overlap of 0.0780998 s
+I0722 16:26:17.350821 10974 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "/scan" (frame_id: "base_scan"):
+Count: 4180  Min: 0  Max: 0.0863143  Mean: 0.0386255
+[0.000000, 0.008631)	          ##########	Count: 2090 (50%)	Total: 2090 (50%)
+[0.008631, 0.017263)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.017263, 0.025894)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.025894, 0.034526)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.034526, 0.043157)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.043157, 0.051789)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.051789, 0.060420)	                    	Count: 0 (0%)	Total: 2090 (50%)
+[0.060420, 0.069051)	                    	Count: 5 (0.119617%)	Total: 2095 (50.1196%)
+[0.069051, 0.077683)	                ####	Count: 909 (21.7464%)	Total: 3004 (71.866%)
+[0.077683, 0.086314]	              ######	Count: 1176 (28.134%)	Total: 4180 (100%)
+I0722 16:26:17.351266 10974 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "/odom" (frame_id: "odom"):
+Count: 13965  Min: -0.0961739  Max: 0.110187  Mean: 0.0115763
+[-0.096174, -0.075538)	                    	Count: 23 (0.164697%)	Total: 23 (0.164697%)
+[-0.075538, -0.054902)	                    	Count: 178 (1.27462%)	Total: 201 (1.43931%)
+[-0.054902, -0.034266)	                   #	Count: 586 (4.1962%)	Total: 787 (5.63552%)
+[-0.034266, -0.013630)	                  ##	Count: 1254 (8.97959%)	Total: 2041 (14.6151%)
+[-0.013630, 0.007007)	              ######	Count: 3931 (28.1489%)	Total: 5972 (42.7641%)
+[0.007007, 0.027643)	             #######	Count: 4741 (33.9492%)	Total: 10713 (76.7132%)
+[0.027643, 0.048279)	                 ###	Count: 2233 (15.99%)	Total: 12946 (92.7032%)
+[0.048279, 0.068915)	                   #	Count: 713 (5.10562%)	Total: 13659 (97.8088%)
+[0.068915, 0.089551)	                    	Count: 276 (1.97637%)	Total: 13935 (99.7852%)
+[0.089551, 0.110187]	                    	Count: 30 (0.214823%)	Total: 13965 (100%)
+[cartographer_rosbag_validate_node-1] process has finished cleanly
+
